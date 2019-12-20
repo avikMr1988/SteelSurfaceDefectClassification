@@ -16,7 +16,8 @@ from pathlib import Path
 def DownloadNEU64():
     path = Path(os.getcwd())
     TARPATH = str(path) + '/Data/'
-    print(TARPATH)
+    if os.path.exists(TARPATH) == True:
+        os.remove(TARPATH)
     os.makedirs(TARPATH, exist_ok=True)
     fileName = 'NEU-CLS-64.zip'
     url = 'https://drive.google.com/uc?id=1UD68IdpVjmN9SoOp77W5UgFKPDQziRPj'
@@ -24,7 +25,7 @@ def DownloadNEU64():
     gdown.download(url, output, quiet=False)
     return output
 
-# Extract the downloaded tar file and store it in a directory
+# Extract the downloaded zip file and store it in a directory
 def ExtractFiles(tarPath):
     extractPath = os.path.dirname(tarPath)
     dirName = (os.path.basename(tarPath))[:-4]
