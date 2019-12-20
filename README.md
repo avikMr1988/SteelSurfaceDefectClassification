@@ -12,7 +12,7 @@ Specifications of Network :
 
               PyTorch Sequential Layer : Conv2D(Kernel Size : 5, Padding : 2, Stride : 1, Activation : Tanh, Nr. Channels: 32),               Maxpooling : (Kernel: 2, Stride  : 2)
               PyTorch Sequential Layer : Conv2D(Kernel Size : 5, Padding : 2, Stride : 1, Activation : Tanh, Nr. Channels: 64),               Maxpooling : (Kernel: 2, Stride  : 2)
-              PyTorch Sequential Layer : Conv2D(Kernel Size : 5, Padding : 2, Stride : 1, Activation : Tanh, Nr. Channels:                    128),Maxpooling : (Kernel: 2, Stride  : 2)
+              PyTorch Sequential Layer : Conv2D(Kernel Size : 5, Padding : 2, Stride : 1, Activation : ReLu, Nr. Channels:                    128),Maxpooling : (Kernel: 2, Stride  : 2)
               Fully Connected Layers : 4*4*128 - > 1000, 1000 - > 500, 500 -> 9
               
  Hyper Parameters used for training :
