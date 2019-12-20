@@ -1,7 +1,14 @@
 import torch
 import torch.nn as nn
 
+# A simple CNN Model for Steel Surface Defect Detection
+# Class overriden using nn.Module class.
+# Constructor and the forward function overriden
+
 class CNNModel(nn.Module):
+
+# Defines the Network Layers.
+
     def __init__(self):
         super(CNNModel, self).__init__()
         self.layer1 = nn.Sequential(
@@ -20,6 +27,8 @@ class CNNModel(nn.Module):
         self.fc1 = nn.Linear(4 * 4 * 128, 1000)
         self.fc2 = nn.Linear(1000, 500)
         self.fc3 = nn.Linear(500, 9)
+
+# Defines the Feed Forward Pass for the Neural network.
 
     def forward(self, x):
         out = self.layer1(x)

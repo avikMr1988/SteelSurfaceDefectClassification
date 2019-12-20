@@ -4,6 +4,9 @@ import os
 from torch.utils.data import Dataset
 from PIL import Image
 import numpy as np
+# This file creates the custom data set taking the Dataset
+# by overriding the PyTorch abstract class DataSet.
+# Data Set Format used : { Image : Double Tensor, Label : Int Tensor }
 
 class SurfaceDataSet(Dataset):
     """Steel Surface Defect Classification Dataset NEU-CLS-64"""
@@ -14,6 +17,7 @@ class SurfaceDataSet(Dataset):
             csv_file (string): Path to the csv file containing images and labels
         """
         self.dataSet = pd.read_csv(csv_file)
+
     def __len__(self):
         return len(self.dataSet)
 
