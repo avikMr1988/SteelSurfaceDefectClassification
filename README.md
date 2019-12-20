@@ -34,3 +34,5 @@ Software Requirements:
 Code Usage :
 
 Run MainScript.Py : It has provisions for Downloading the data, Creating the DataSet, Firing the training and the evaluation on the stored Data.
+                                    Training Set - 700 Images per Class
+                                    Test Set : 200 Images per Class
