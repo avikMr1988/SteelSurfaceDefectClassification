@@ -14,10 +14,7 @@ def main():
 
 # Check for Presence of Data Set. If Present don't Download
 
-    if os.path.exists(DATAPATH + '/NEU-CLS-64') == True or os.path.exists(DATAPATH + TRAINFILENAME) or os.path.exists(DATAPATH + TESTFILENAME):
-        print('Data Set is already prepeared')
-    else:
-        dwnld.augmentFilesANDPrepeareCSV()
+    dwnld.augmentFilesANDPrepeareCSV()
 
 # Create the train and test dataset using the DataSet class of PyTorch
 
