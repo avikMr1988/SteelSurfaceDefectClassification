@@ -2,7 +2,7 @@
 
 Implements a simple CNN Module for working on Steel Strip Surface Defect Classification Database.
             
-            Test Accuracy on Augmented Data Set Achieved is : 0.923.
+            Test Accuracy on Augmented Data Set Achieved is : 0.895.
             Accuracy Metric Used is : Sklearn.metrics.accuracy_score
           
 Uses a three layered convolutional network Each layer using maxpooling for downsampling of Images. Three fully connected layers are being used to get the desired prediction accuracy.
