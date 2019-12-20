@@ -31,3 +31,6 @@ Software Requirements:
                                     Torch  : 1.3.1
                                     PIL    : 6.2.1
                                     GDown  : 3.8.3 
+Code Usage :
+
+Run MainScript.Py : It has provisions for Downloading the data, Creating the DataSet, Firing the training and the evaluation on the stored Data.
